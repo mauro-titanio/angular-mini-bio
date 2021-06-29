@@ -20,6 +20,9 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    this.toggleNightMode()
+  }
   }
 
   user: any = {
