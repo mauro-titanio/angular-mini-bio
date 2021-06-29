@@ -28,11 +28,21 @@ export class ProfileComponent implements OnInit {
     profile_img: 'https://i.imgur.com/xnZLM0l.png',
     description_title: 'Front-end developer',
     description_text: "I'm a front-end developer based in Ciudad Real, Spain",
-    links: {
-      github: 'https://github.com/mauro-titanio',
-      website: 'https://maurotitanio.com/',
-      linkedin: 'https://www.linkedin.com/in/mauro-titanio/'
+    links: [{
+      link: 'https://github.com/mauro-titanio',
+      label: 'Github',
+      icon: faGithub
+    },
+    {
+      link: 'https://maurotitanio.com/',
+      label: 'Website',
+      icon: faGlobe
+    },{
+      link: 'https://www.linkedin.com/in/mauro-titanio/',
+      label: 'Linkedin',
+      icon: faLinkedinIn
     }
+  ]
   }
 
   toggleNightMode(){
@@ -43,9 +53,9 @@ export class ProfileComponent implements OnInit {
      this.nightMode = false;
      this.faMoon = faMoon;
     }
-  
+
   }
-  
+
 
 
 
